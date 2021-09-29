@@ -33,3 +33,14 @@ function firstVideo () {
       .getElementById('fifth-video-content')
       .setAttribute('src', 'https://www.youtube.com/embed/m_hx0Ebg5Yo?autoplay=1')
   }
+
+
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add("active");
+  }else{
+    toTop.classList.remove("active");
+  }
+})
